@@ -5,31 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Keeper — Privacy Policy</title>
 <style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 48px 24px 80px;
-    line-height: 1.65;
-    color: #1c1c1e;
-    background: #f2f2f7;
+  :root {
+    color-scheme: light dark;
+    --bg: #f2f2f7;
+    --text: #1c1c1e;
+    --text-secondary: #6b6b70;
+    --accent: #0a6cff;
+    --border: #e0e0e5;
   }
   @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #0b0b0d; }
-    a { color: #6fa8ff; }
+    :root {
+      --bg: #0b0b0d;
+      --text: #f2f2f7;
+      --text-secondary: #9a9aa0;
+      --accent: #4d94ff;
+      --border: #2c2c30;
+    }
   }
-  h1 { font-size: 1.7rem; margin-bottom: 4px; }
-  h2 { font-size: 1.1rem; margin-top: 2.2em; }
-  .updated { color: #8a8a8e; font-size: 0.9rem; margin-top: 0; }
-  a { color: #0a6cff; }
-  .back { display: inline-block; margin-bottom: 24px; }
+
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 32px;
+  }
+  .back:hover { text-decoration: underline; }
+
+  h1 { font-size: 1.7rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .updated { color: var(--text-secondary); font-size: 0.9rem; margin: 0 0 36px; }
+
+  h2 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin: 2.4em 0 0.8em;
+  }
+  h2:first-of-type { margin-top: 0; }
+
+  p, li { margin: 0 0 0.9em; }
+  ul { padding-left: 1.2em; margin: 0 0 0.9em; }
+  a { color: var(--accent); }
+
+  hr { border: none; border-top: 1px solid var(--border); margin: 2.4em 0; }
 </style>
 </head>
 <body>
-  <a class="back" href="index.html">&larr; Back</a>
+  <a class="back" href="index.html">&larr; Keeper</a>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July 22, 2026</p>
+  <p class="updated">Last updated July 22, 2026</p>
 
   <p>Keeper is a photo library review app. This policy explains what happens to your data when you use it — the short version is: almost nothing leaves your device.</p>
 
@@ -57,6 +97,8 @@
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the "last updated" date above will reflect it. Continued use of the app after a change constitutes acceptance of the update.</p>
+
+  <hr>
 
   <h2>Contact</h2>
   <p>Questions about this policy? Email <a href="mailto:support@example.com">support@example.com</a>.</p>
