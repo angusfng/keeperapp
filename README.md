@@ -10,6 +10,4 @@ Support and legal pages for [Keeper](https://github.com/angusfng/keeper), hosted
 
 Served at: https://angusfng.github.io/keeperapp/
 
-## Before pointing App Store Connect / the app at this
-
-Replace the placeholder emails (`support@example.com`, `feedback@example.com`) in both files with real addresses.
+Contact address: keeperapp@protonmail.com
