@@ -4,103 +4,46 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Keeper — Privacy Policy</title>
-<style>
-  :root {
-    color-scheme: light dark;
-    --bg: #f2f2f7;
-    --text: #1c1c1e;
-    --text-secondary: #6b6b70;
-    --accent: #0a6cff;
-    --border: #e0e0e5;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0b0b0d;
-      --text: #f2f2f7;
-      --text-secondary: #9a9aa0;
-      --accent: #4d94ff;
-      --border: #2c2c30;
-    }
-  }
-
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 56px 24px 96px;
-    line-height: 1.7;
-    color: var(--text);
-    background: var(--bg);
-  }
-
-  .back {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    margin-bottom: 32px;
-  }
-  .back:hover { text-decoration: underline; }
-
-  h1 { font-size: 1.7rem; margin: 0 0 6px; letter-spacing: -0.02em; }
-  .updated { color: var(--text-secondary); font-size: 0.9rem; margin: 0 0 36px; }
-
-  h2 {
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-    margin: 2.4em 0 0.8em;
-  }
-  h2:first-of-type { margin-top: 0; }
-
-  p, li { margin: 0 0 0.9em; }
-  ul { padding-left: 1.2em; margin: 0 0 0.9em; }
-  a { color: var(--accent); }
-
-  hr { border: none; border-top: 1px solid var(--border); margin: 2.4em 0; }
-</style>
+<link rel="icon" href="assets/AppLogo.png">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <a class="back" href="index.html">&larr; Keeper</a>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated July 22, 2026</p>
+  <div class="wrap doc">
+    <a class="back" href="index.html">&larr; Keeper</a>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated July 22, 2026</p>
 
-  <p>Keeper is a photo library review app. This policy explains what happens to your data when you use it — the short version is: almost nothing leaves your device.</p>
+    <p>Keeper is a photo library review app. This policy explains what happens to your data when you use it — the short version is: almost nothing leaves your device.</p>
 
-  <h2>Photo library access</h2>
-  <p>Keeper requests access to your photo library to display photos for review and to delete the ones you choose. This happens entirely through Apple's PhotosKit framework, on your device. Keeper does not upload, transmit, or store copies of your photos anywhere — not to us, not to any third party.</p>
+    <h2>Photo library access</h2>
+    <p>Keeper requests access to your photo library to display photos for review and to delete the ones you choose. This happens entirely through Apple's PhotosKit framework, on your device. Keeper does not upload, transmit, or store copies of your photos anywhere — not to us, not to any third party.</p>
 
-  <h2>Location and camera metadata</h2>
-  <p>When a photo has location data attached, Keeper reads the coordinates already embedded in that photo and asks Apple's geocoding service to resolve them into a readable place name (e.g. "Sydney, Australia") for display. This request goes directly from your device to Apple — Keeper does not operate this service, see the result separately, or store it. Camera model information is read from the photo's own metadata and never leaves your device.</p>
+    <h2>Location and camera metadata</h2>
+    <p>When a photo has location data attached, Keeper reads the coordinates already embedded in that photo and asks Apple's geocoding service to resolve them into a readable place name (e.g. "Sydney, Australia") for display. This request goes directly from your device to Apple — Keeper does not operate this service, see the result separately, or store it. Camera model information is read from the photo's own metadata and never leaves your device.</p>
 
-  <h2>Purchases</h2>
-  <p>Keeper Pro subscriptions are handled entirely by Apple through StoreKit. Keeper never sees or stores your payment details — Apple manages billing, receipts, and subscription status directly.</p>
+    <h2>Purchases</h2>
+    <p>Keeper Pro subscriptions are handled entirely by Apple through StoreKit. Keeper never sees or stores your payment details — Apple manages billing, receipts, and subscription status directly.</p>
 
-  <h2>What we don't do</h2>
-  <ul>
-    <li>No account or sign-in is required or offered.</li>
-    <li>No analytics, tracking, or advertising SDKs are included in the app.</li>
-    <li>We don't collect your name, email, or contact details unless you choose to email us directly for support.</li>
-  </ul>
+    <h2>What we don't do</h2>
+    <ul>
+      <li>No account or sign-in is required or offered.</li>
+      <li>No analytics, tracking, or advertising SDKs are included in the app.</li>
+      <li>We don't collect your name, email, or contact details unless you choose to email us directly for support.</li>
+    </ul>
 
-  <h2>Data stored on your device</h2>
-  <p>Keeper keeps a small local record of which photos you've decided to keep (so it can show you your review history) and some usage statistics (like your review streak). This stays on your device and is never transmitted anywhere. You can clear it at any time from Settings &rarr; Reset Progress.</p>
+    <h2>Data stored on your device</h2>
+    <p>Keeper keeps a small local record of which photos you've decided to keep (so it can show you your review history) and some usage statistics (like your review streak). This stays on your device and is never transmitted anywhere. You can clear it at any time from Settings &rarr; Reset Progress.</p>
 
-  <h2>Children's privacy</h2>
-  <p>Keeper is not directed at children and does not knowingly collect data from anyone.</p>
+    <h2>Children's privacy</h2>
+    <p>Keeper is not directed at children and does not knowingly collect data from anyone.</p>
 
-  <h2>Changes to this policy</h2>
-  <p>If this policy changes, the "last updated" date above will reflect it. Continued use of the app after a change constitutes acceptance of the update.</p>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the "last updated" date above will reflect it. Continued use of the app after a change constitutes acceptance of the update.</p>
 
-  <hr>
+    <hr>
 
-  <h2>Contact</h2>
-  <p>Questions about this policy? Email <a href="mailto:support@example.com">support@example.com</a>.</p>
+    <h2>Contact</h2>
+    <p>Questions about this policy? Email <a href="mailto:support@example.com">support@example.com</a>.</p>
+  </div>
 </body>
 </html>
