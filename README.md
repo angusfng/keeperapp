@@ -10,4 +10,4 @@ Support and legal pages for [Keeper](https://github.com/angusfng/keeper), hosted
 
 Served at: https://angusfng.github.io/keeperapp/
 
-Contact address: keeperapp@protonmail.com
+Contact address: angusdevapps@gmail.com
