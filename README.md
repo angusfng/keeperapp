@@ -1,6 +1,6 @@
 # keeperapp
 
-Support and legal pages for [Keeper](https://github.com/angusfng/keeper), hosted via GitHub Pages. Shares the app's actual visual identity — same colors, gradient, and font as `keeper/Theme.swift` and `keeper/Fonts/`, not an approximation.
+Support and legal pages for [Keeper](https://github.com/angusfng/keeper), hosted on Cloudflare Pages (project `keeper-photo-cleaner`, deploys on every push to `main`). Shares the app's actual visual identity — same colors, gradient, and font as `keeper/Theme.swift` and `keeper/Fonts/`, not an approximation.
 
 - `index.html` — support / contact / feature suggestions
 - `privacy.html` — Privacy Policy
@@ -8,6 +8,8 @@ Support and legal pages for [Keeper](https://github.com/angusfng/keeper), hosted
 - `assets/fonts/` — the app's actual bundled Rubik weights (self-hosted, same files as the app), under SIL OFL (`assets/fonts/OFL.txt`)
 - `assets/style.css` — shared stylesheet; color tokens are commented with which `Theme.swift` constant they mirror
 
-Served at: https://angusfng.github.io/keeperapp/
+Served at: https://keeper-photo-cleaner.pages.dev/ (privacy policy at `/privacy`).
+
+The old GitHub Pages address (https://angusfng.github.io/keeperapp/) still serves this repo, and each page redirects github.io visitors to the Cloudflare address, so links in the 1.0 app keep working.
 
 Contact address: angusdevapps@gmail.com
