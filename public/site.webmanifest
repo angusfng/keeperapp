@@ -1,0 +1,11 @@
+{
+  "name": "Keeper: Swipe Photo Cleaner",
+  "short_name": "Keeper",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/app-icon.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#F6F2EA",
+  "background_color": "#F6F2EA",
+  "display": "browser"
+}

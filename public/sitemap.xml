@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://keeper-photo-cleaner.pages.dev/</loc><lastmod>2026-11-18</lastmod>
+    <image:image><image:loc>https://keeper-photo-cleaner.pages.dev/assets/screens/swipe-keep.webp</image:loc></image:image>
+    <image:image><image:loc>https://keeper-photo-cleaner.pages.dev/assets/screens/home.webp</image:loc></image:image>
+    <image:image><image:loc>https://keeper-photo-cleaner.pages.dev/assets/screens/session-complete.webp</image:loc></image:image>
+    <image:image><image:loc>https://keeper-photo-cleaner.pages.dev/assets/screens/on-this-day.webp</image:loc></image:image>
+    <image:image><image:loc>https://keeper-photo-cleaner.pages.dev/assets/screens/swipe-delete.webp</image:loc></image:image>
+  </url>
+  <url><loc>https://keeper-photo-cleaner.pages.dev/photo-storage-calculator</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://keeper-photo-cleaner.pages.dev/guides/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://keeper-photo-cleaner.pages.dev/guides/how-to-delete-photos-on-iphone</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://keeper-photo-cleaner.pages.dev/guides/free-up-iphone-storage-photos</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://keeper-photo-cleaner.pages.dev/guides/recently-deleted-photos-iphone</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://keeper-photo-cleaner.pages.dev/guides/delete-photos-from-iphone-not-icloud</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://keeper-photo-cleaner.pages.dev/support</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://keeper-photo-cleaner.pages.dev/privacy</loc><lastmod>2026-11-04</lastmod></url>
+</urlset>

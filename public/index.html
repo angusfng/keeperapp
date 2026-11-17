@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Keeper: Swipe Photo Cleaner for iPhone. Delete Photos, Free Up Space</title>
+  <meta name="description" content="Keeper is a swipe photo cleaner for iPhone. Swipe right to keep a photo, left to delete it, and clean up your camera roll. Nothing is deleted until you tap Save.">
+  <link rel="canonical" href="https://keeper-photo-cleaner.pages.dev/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#F6F2EA">
+  <meta name="apple-itunes-app" content="app-id=6793817811">
+  <meta name="application-name" content="Keeper">
+  <meta name="apple-mobile-web-app-title" content="Keeper">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Keeper">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://keeper-photo-cleaner.pages.dev/">
+  <meta property="og:title" content="Keeper: swipe to clean up your camera roll">
+  <meta property="og:description" content="Swipe right to keep a photo, left to delete it. Clear hundreds of shots in one sitting and see how much storage you got back.">
+  <meta property="og:image" content="https://keeper-photo-cleaner.pages.dev/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Keeper app on an iPhone, with a photo being swiped right to keep it">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Keeper: swipe to clean up your camera roll">
+  <meta name="twitter:description" content="Swipe right to keep a photo, left to delete it. Clear hundreds of shots in one sitting and see how much storage you got back.">
+  <meta name="twitter:image" content="https://keeper-photo-cleaner.pages.dev/assets/og.png">
+  <meta name="twitter:image:alt" content="The Keeper app on an iPhone, with a photo being swiped right to keep it">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" as="image" href="/assets/photos/1011.webp" fetchpriority="high">
+  <link rel="stylesheet" href="/styles.css?v=1">
+  <link rel="stylesheet" href="/landing.css?v=1">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "@id": "https://keeper-photo-cleaner.pages.dev/#app",
+        "name": "Swipe Photo Cleaner: Keeper",
+        "alternateName": ["Keeper", "Keeper photo cleaner", "Keeper: Photo Cleanup"],
+        "description": "A swipe photo cleaner for iPhone and iPad. Keeper shows your photos one at a time, full screen. Swipe right to keep a photo and left to delete it. Choices are queued and only applied when you tap Save, and deleted photos go to Recently Deleted for 30 days.",
+        "operatingSystem": "iOS 18.0 or later",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "Photo cleaner",
+        "inLanguage": ["en", "de", "es", "fr", "it", "ja", "ko", "nl", "pt-BR", "tr", "zh-Hans", "zh-Hant"],
+        "url": "https://keeper-photo-cleaner.pages.dev/",
+        "downloadUrl": "https://apps.apple.com/app/id6793817811",
+        "installUrl": "https://apps.apple.com/app/id6793817811",
+        "sameAs": ["https://apps.apple.com/app/id6793817811"],
+        "image": "https://keeper-photo-cleaner.pages.dev/assets/app-icon.png",
+        "screenshot": [
+          "https://keeper-photo-cleaner.pages.dev/assets/screens/swipe-keep.webp",
+          "https://keeper-photo-cleaner.pages.dev/assets/screens/home.webp",
+          "https://keeper-photo-cleaner.pages.dev/assets/screens/session-complete.webp",
+          "https://keeper-photo-cleaner.pages.dev/assets/screens/on-this-day.webp",
+          "https://keeper-photo-cleaner.pages.dev/assets/screens/swipe-delete.webp"
+        ],
+        "featureList": [
+          "Swipe right to keep a photo, left to delete it",
+          "Undo the last swipe",
+          "Nothing is deleted until you tap Save",
+          "Storage freed shown after every session",
+          "On This Day: photos from today's date in earlier years",
+          "Start with shuffle, a chosen photo, oldest first, newest first or one month at a time",
+          "Limit a session to one album",
+          "Date, place and camera shown for each photo",
+          "Daily streak and lifetime stats",
+          "Picks up where you left off",
+          "Photos never leave the device, no account"
+        ],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free to download. A weekly or yearly subscription is needed to use the app." },
+        "publisher": { "@id": "https://keeper-photo-cleaner.pages.dev/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://keeper-photo-cleaner.pages.dev/#org",
+        "name": "Keeper",
+        "url": "https://keeper-photo-cleaner.pages.dev/",
+        "logo": { "@type": "ImageObject", "url": "https://keeper-photo-cleaner.pages.dev/assets/app-icon.png", "width": 512, "height": 512 },
+        "email": "angusdevapps@gmail.com",
+        "contactPoint": { "@type": "ContactPoint", "contactType": "customer support", "email": "angusdevapps@gmail.com", "url": "https://keeper-photo-cleaner.pages.dev/support" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeper-photo-cleaner.pages.dev/#site",
+        "name": "Keeper",
+        "url": "https://keeper-photo-cleaner.pages.dev/",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://keeper-photo-cleaner.pages.dev/#org" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://keeper-photo-cleaner.pages.dev/#page",
+        "url": "https://keeper-photo-cleaner.pages.dev/",
+        "name": "Keeper: Swipe Photo Cleaner for iPhone. Delete Photos, Free Up Space",
+        "isPartOf": { "@id": "https://keeper-photo-cleaner.pages.dev/#site" },
+        "about": { "@id": "https://keeper-photo-cleaner.pages.dev/#app" },
+        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://keeper-photo-cleaner.pages.dev/assets/og.png", "width": 1200, "height": 630 },
+        "dateModified": "2026-11-18",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeper-photo-cleaner.pages.dev/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "How does Keeper work?", "acceptedAnswer": { "@type": "Answer", "text": "Keeper shows the photos and videos in your library one at a time, full screen. Swipe right to keep one and left to delete it. Your choices are queued while you swipe, and nothing is removed until you tap Save. When you save, iOS asks you to confirm the deletion." } },
+          { "@type": "Question", "name": "Can I get a photo back if I delete it by mistake?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. While you swipe, tap undo to bring the last photo back. After you save, deleted photos go to the Recently Deleted album in the Photos app, where you can recover them for 30 days." } },
+          { "@type": "Question", "name": "Are my photos uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. Keeper works inside your Photos library on your iPhone or iPad through Apple's PhotosKit. It doesn't upload, send or copy your photos, and there's no account to create." } },
+          { "@type": "Question", "name": "Does Keeper work with iCloud Photos?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Keeper uses your normal Photos library, so it works the same way the Photos app does. With iCloud Photos on, a photo you delete is deleted on all your devices that use iCloud Photos, and it stays in Recently Deleted for 30 days." } },
+          { "@type": "Question", "name": "Can I clean up just one album or one month?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can limit a session to a single album, browse your library by month and clear one month at a time, or start from your oldest photos, your newest photos, a photo you pick, or a random spot." } },
+          { "@type": "Question", "name": "Does Keeper find duplicate or blurry photos automatically?", "acceptedAnswer": { "@type": "Answer", "text": "No. Keeper doesn't pick photos for you. It puts each photo in front of you so you decide, which is quicker than scrolling and safer than an automatic cleaner. For exact duplicates, the Photos app has its own Duplicates album under Utilities." } },
+          { "@type": "Question", "name": "Does it work on iPad?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Keeper runs on iPhone and iPad with iOS or iPadOS 18 or later." } },
+          { "@type": "Question", "name": "How much does Keeper cost?", "acceptedAnswer": { "@type": "Answer", "text": "Keeper is free to download and needs a weekly or yearly subscription to use. Current prices for your country are shown on the App Store and in the app. You can cancel any time in your Apple Account settings." } }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="landing">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap-wide">
+      <a class="brand" href="/"><img src="/assets/app-icon.png" alt="" width="34" height="34">Keeper</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="/guides/">Guides</a>
+        <a href="/support">Support</a>
+        <a class="nav-cta" href="https://apps.apple.com/app/id6793817811">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap-wide hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Swipe photo cleaner for iPhone</p>
+          <h1>Clean up your camera roll, <span class="keep-word">one swipe</span> at a time.</h1>
+          <p class="hero-lede">Keeper shows your photos one by one, full screen. Swipe right to keep. Swipe left to delete. Clear hundreds of shots in one sitting and see exactly how much storage you got back.</p>
+          <div class="hero-actions">
+            <a class="store-badge" href="https://apps.apple.com/app/id6793817811" aria-label="Download Keeper on the App Store">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#apple"/></svg>
+              <span><small>Download on the</small>App Store</span>
+            </a>
+            <a class="btn btn-quiet" href="#how">See how it works</a>
+          </div>
+          <ul class="hero-points">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#check"/></svg>Nothing is deleted until you tap Save</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#check"/></svg>Your photos never leave your phone</li>
+          </ul>
+        </div>
+
+        <div class="hero-stage">
+          <div class="demo" id="demo" aria-label="Try it: a stack of sample photos you can swipe">
+            <div class="demo-glow" aria-hidden="true"></div>
+            <div class="demo-stack" id="demo-stack" tabindex="0" role="group" aria-roledescription="photo stack" aria-describedby="demo-hint">
+              <!-- Cards are built by landing.js from this list, top first. Without JavaScript the first photo still shows. -->
+              <figure class="polaroid static" aria-hidden="true">
+                <img src="/assets/photos/1011.webp" alt="" width="640" height="640">
+                <figcaption>Lake trip, 2019</figcaption>
+              </figure>
+            </div>
+            <div class="demo-done" id="demo-done" hidden>
+              <p class="done-title">Nice sweep!</p>
+              <p class="done-stats"><span id="done-kept">0</span> kept, <span id="done-deleted">0</span> deleted</p>
+              <button class="btn btn-primary" type="button" id="demo-reset">Shuffle again</button>
+            </div>
+            <div class="demo-controls">
+              <button class="ctl ctl-delete" type="button" id="btn-delete" aria-label="Delete this photo"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#x"/></svg></button>
+              <button class="ctl ctl-undo" type="button" id="btn-undo" aria-label="Undo the last swipe" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#undo"/></svg></button>
+              <button class="ctl ctl-keep" type="button" id="btn-keep" aria-label="Keep this photo"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#check"/></svg></button>
+            </div>
+            <div class="demo-tally" aria-live="polite">
+              <span class="pill"><span class="swatch keep"></span><b id="tally-kept">0</b>&nbsp;kept</span>
+              <span class="pill"><span class="swatch del"></span><b id="tally-deleted">0</b>&nbsp;deleted</span>
+              <span class="pill freed"><b id="tally-freed">0 MB</b>&nbsp;freed</span>
+            </div>
+            <p class="demo-hint" id="demo-hint">Try it: drag a photo, use the buttons or your arrow keys.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="strip" aria-label="Why Keeper is safe to use">
+      <ul class="wrap-wide strip-list">
+        <li><strong>Nothing deleted mid-swipe</strong><span>Choices wait until you tap Save</span></li>
+        <li><strong>30-day safety net</strong><span>Deleted photos go to Recently Deleted</span></li>
+        <li><strong>Private by design</strong><span>No uploads and no account</span></li>
+        <li><strong>iPhone and iPad</strong><span>iOS 18 or later, 12 languages</span></li>
+      </ul>
+    </section>
+
+    <!-- How it works -->
+    <section class="section how" id="how">
+      <div class="wrap-wide">
+        <div class="section-head reveal">
+          <p class="overline blue">How it works</p>
+          <h2>From a full camera roll to the photos worth keeping.</h2>
+          <p>Scrolling a full camera roll and tapping delete one photo at a time is how a cleanup stalls after ten minutes. Keeper turns it into a single decision per photo, made with your thumb.</p>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="phone"><img src="/assets/screens/home.webp" alt="Keeper home screen with On This Day, your progress and four ways to start a session" width="603" height="1311" loading="lazy" decoding="async"></div>
+            <div class="step-copy">
+              <span class="step-num">1</span>
+              <h3>Pick where to start</h3>
+              <p>Shuffle, start from a photo you pick, go oldest first or newest first. Narrow it to one album when you only want to tidy part of your library.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="phone"><img src="/assets/screens/swipe-keep.webp" alt="A photo being swiped right with a green Keep badge, showing its date and camera" width="603" height="1311" loading="lazy" decoding="async"></div>
+            <div class="step-copy">
+              <span class="step-num">2</span>
+              <h3>Swipe right to keep, left to delete</h3>
+              <p>Each photo fills the screen with its date, place and camera. A light tap tells you when you've crossed the keep or delete point. Swiped the wrong way? Undo slides it back.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="phone"><img src="/assets/screens/session-complete.webp" alt="Session complete screen showing photos kept, photos deleted and storage freed" width="603" height="1311" loading="lazy" decoding="async"></div>
+            <div class="step-copy">
+              <span class="step-num">3</span>
+              <h3>Tap Save, see the space you freed</h3>
+              <p>Keeper hands the deletions to iOS in one go, and you confirm them once. Then you see how many photos you kept, how many you cleared and how much storage came back.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Immersive feature band -->
+    <section class="immersive" aria-labelledby="immersive-title">
+      <div class="wrap-wide immersive-grid">
+        <div class="immersive-copy reveal">
+          <p class="overline green">Made for the photo</p>
+          <h2 id="immersive-title">Your photos, full screen. Everything else gets out of the way.</h2>
+          <p>The swipe screen goes dark so the picture is the only thing you look at. Live Photos play with a long press, videos play inline, and a strip of thumbnails lets you jump back to any photo in the session to change your mind.</p>
+          <ul class="tick-list">
+            <li>Undo the last swipe at any time</li>
+            <li>Jump to any photo from the thumbnail strip</li>
+            <li>Date, place and camera for every shot</li>
+            <li>Photos, videos and Live Photos</li>
+          </ul>
+        </div>
+        <div class="immersive-phones reveal">
+          <div class="phone phone-back"><img src="/assets/screens/card-location.webp" alt="A photo in Keeper showing where and when it was taken" width="603" height="1311" loading="lazy" decoding="async"></div>
+          <div class="phone phone-front"><img src="/assets/screens/swipe-delete.webp" alt="A blurry photo being swiped left with a red Delete badge" width="603" height="1311" loading="lazy" decoding="async"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bento features -->
+    <section class="section" id="features">
+      <div class="wrap-wide">
+        <div class="section-head reveal">
+          <p class="overline amber">Features</p>
+          <h2>Everything you need to finally finish the cleanup.</h2>
+        </div>
+        <div class="bento">
+          <article class="tile tile-otd reveal">
+            <div class="tile-copy">
+              <p class="overline amber">On This Day</p>
+              <h3>Rediscover the photos you took on today's date.</h3>
+              <p>Every day Keeper gathers photos from this date in earlier years. Keep the memories, clear the misfires around them.</p>
+            </div>
+            <div class="phone phone-tile"><img src="/assets/screens/on-this-day.webp" alt="On This Day in Keeper, showing photos from the same date in past years" width="603" height="1311" loading="lazy" decoding="async"></div>
+          </article>
+
+          <article class="tile tile-stats reveal">
+            <p class="overline">Your progress</p>
+            <div class="stat-big"><span>5,599</span> photos reviewed</div>
+            <div class="bar" aria-hidden="true"><span class="bar-keep" style="width:61%"></span><span class="bar-del" style="width:39%"></span></div>
+            <ul class="stat-row">
+              <li><span class="swatch keep"></span>3,412 kept</li>
+              <li><span class="swatch del"></span>2,187 deleted</li>
+              <li class="right">9.66 GB freed</li>
+            </ul>
+            <p class="tile-foot"><span class="flame" aria-hidden="true"></span>A daily streak and lifetime stats keep the cleanup going. <span class="sr">Example figures from the app's demo data.</span></p>
+          </article>
+
+          <article class="tile tile-start reveal">
+            <p class="overline blue">Start anywhere</p>
+            <h3>Five ways into your library.</h3>
+            <ul class="start-grid">
+              <li class="start-primary"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#shuffle"/></svg><strong>Shuffle</strong><span>Jump in anywhere</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#photo"/></svg><strong>Pick a Photo</strong><span>Choose your start</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#clock"/></svg><strong>Oldest First</strong><span>From the beginning</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#sparkle"/></svg><strong>Newest First</strong><span>Latest shots first</span></li>
+            </ul>
+            <p class="tile-foot">Or browse by month and clear one month at a time.</p>
+          </article>
+
+          <article class="tile tile-small reveal">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#album"/></svg>
+            <h3>One album at a time</h3>
+            <p>Scope a session to Screenshots, a trip or any album you choose.</p>
+          </article>
+          <article class="tile tile-small reveal">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#resume"/></svg>
+            <h3>Picks up where you left off</h3>
+            <p>Five minutes on the bus counts. Resume from Home next time.</p>
+          </article>
+          <article class="tile tile-small reveal">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#globe"/></svg>
+            <h3>Speaks your language</h3>
+            <p>English, Spanish, French, German, Japanese, Korean, Chinese and more.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section privacy-band">
+      <div class="wrap-wide privacy-card reveal">
+        <div class="lock" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#lock"/></svg></div>
+        <div>
+          <p class="overline green">Private by design</p>
+          <h2>Your photos stay on your phone. Full stop.</h2>
+          <p>Keeper works inside your Photos library through Apple's own PhotosKit. It never uploads, copies or sends your photos anywhere, and there's no account to create. Deleting uses the same system dialog as the Photos app, so iOS always asks before anything goes.</p>
+          <a href="/privacy">Read the privacy policy</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guides teaser -->
+    <section class="section guides-teaser">
+      <div class="wrap-wide">
+        <div class="section-head reveal">
+          <p class="overline blue">Guides</p>
+          <h2>Running out of iPhone storage?</h2>
+          <p>Plain answers on deleting photos, getting space back and what iCloud does with the photos you remove.</p>
+        </div>
+        <ul class="guide-cards reveal">
+          <li><a href="/guides/how-to-delete-photos-on-iphone"><strong>How to delete photos on iPhone</strong><span>One photo, many at once, and what happens after you tap Delete.</span></a></li>
+          <li><a href="/guides/free-up-iphone-storage-photos"><strong>Free up iPhone storage from photos</strong><span>Check what Photos is using, then get space back without losing anything you want.</span></a></li>
+          <li><a href="/guides/recently-deleted-photos-iphone"><strong>Recently Deleted on iPhone</strong><span>Find it, recover photos, or delete them for good.</span></a></li>
+          <li><a href="/guides/delete-photos-from-iphone-not-icloud"><strong>Delete photos from iPhone but not iCloud</strong><span>What Apple says actually happens, and the options that work.</span></a></li>
+          <li><a href="/photo-storage-calculator"><strong>Photo storage calculator</strong><span>See how much space a cleanup would free, from your own numbers.</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="wrap prose">
+        <p class="overline">Questions</p>
+        <h2>Common questions</h2>
+        <details>
+          <summary>How does Keeper work?</summary>
+          <p>Keeper shows the photos and videos in your library one at a time, full screen. Swipe right to keep one and left to delete it. Your choices are queued while you swipe, and nothing is removed until you tap Save. When you save, iOS asks you to confirm the deletion.</p>
+        </details>
+        <details>
+          <summary>Can I get a photo back if I delete it by mistake?</summary>
+          <p>Yes. While you swipe, tap undo to bring the last photo back. After you save, deleted photos go to the Recently Deleted album in the Photos app, where you can recover them for 30 days. Here's <a href="/guides/recently-deleted-photos-iphone">how to recover them</a>.</p>
+        </details>
+        <details>
+          <summary>Are my photos uploaded anywhere?</summary>
+          <p>No. Keeper works inside your Photos library on your iPhone or iPad through Apple's PhotosKit. It doesn't upload, send or copy your photos, and there's no account to create.</p>
+        </details>
+        <details>
+          <summary>Does Keeper work with iCloud Photos?</summary>
+          <p>Yes. Keeper uses your normal Photos library, so it works the same way the Photos app does. With iCloud Photos on, a photo you delete is deleted on all your devices that use iCloud Photos, and it stays in Recently Deleted for 30 days. More on that in <a href="/guides/delete-photos-from-iphone-not-icloud">deleting photos from iPhone but not iCloud</a>.</p>
+        </details>
+        <details>
+          <summary>Can I clean up just one album or one month?</summary>
+          <p>Yes. You can limit a session to a single album, browse your library by month and clear one month at a time, or start from your oldest photos, your newest photos, a photo you pick, or a random spot.</p>
+        </details>
+        <details>
+          <summary>Does Keeper find duplicate or blurry photos automatically?</summary>
+          <p>No. Keeper doesn't pick photos for you. It puts each photo in front of you so you decide, which is quicker than scrolling and safer than an automatic cleaner. For exact duplicates, the Photos app has its own Duplicates album under Utilities.</p>
+        </details>
+        <details>
+          <summary>Does it work on iPad?</summary>
+          <p>Yes. Keeper runs on iPhone and iPad with iOS or iPadOS 18 or later.</p>
+        </details>
+        <details>
+          <summary>How much does Keeper cost?</summary>
+          <p>Keeper is free to download and needs a weekly or yearly subscription to use. Current prices for your country are shown on the App Store and in the app. You can cancel any time in your Apple Account settings.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="wrap-wide closing-inner">
+        <div class="closing-copy">
+          <h2 id="closing-title">Your camera roll, finally under control.</h2>
+          <p>Ten minutes of swiping clears more than an afternoon of scrolling. Start with today's date, or your oldest photos, and watch the storage come back.</p>
+          <a class="store-badge light" href="https://apps.apple.com/app/id6793817811" aria-label="Download Keeper on the App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#apple"/></svg>
+            <span><small>Download on the</small>App Store</span>
+          </a>
+          <p class="fine">Free to download. A subscription is needed to use the app.</p>
+        </div>
+        <div class="qr">
+          <img src="/assets/qr-app-store.svg" alt="QR code that opens Keeper on the App Store" width="168" height="168" loading="lazy">
+          <p>Point your iPhone camera here</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap-wide">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="/"><img src="/assets/app-icon.png" alt="" width="34" height="34" loading="lazy">Keeper</a>
+          <p>The swipe photo cleaner for iPhone and iPad. Swipe right to keep, left to delete.</p>
+        </div>
+        <nav aria-label="Guides">
+          <p class="footer-title"><a href="/guides/">Guides</a></p>
+          <ul>
+            <li><a href="/guides/how-to-delete-photos-on-iphone">How to delete photos on iPhone</a></li>
+            <li><a href="/guides/free-up-iphone-storage-photos">Free up iPhone storage from photos</a></li>
+            <li><a href="/guides/recently-deleted-photos-iphone">Recently Deleted on iPhone</a></li>
+            <li><a href="/guides/delete-photos-from-iphone-not-icloud">Delete from iPhone but not iCloud</a></li>
+            <li><a href="/photo-storage-calculator">Photo storage calculator</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Keeper">
+          <p class="footer-title">Keeper</p>
+          <ul>
+            <li><a href="https://apps.apple.com/app/id6793817811">Download on the App Store</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-base">
+        <span>© 2026 Keeper. Not affiliated with Apple.</span>
+        <span><a href="/support">Support</a><a href="/privacy">Privacy</a><!--email_off--><a href="mailto:angusdevapps@gmail.com">Contact</a><!--/email_off--></span>
+      </div>
+    </div>
+  </footer>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="apple" viewBox="0 0 24 24"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.32-3.5zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.67-.92 2.66.97.08 1.96-.49 2.56-1.21z"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
+    <symbol id="undo" viewBox="0 0 24 24"><path d="M9 7L4.5 11.5 9 16M5 11.5h9a5 5 0 010 10h-2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="shuffle" viewBox="0 0 24 24"><path d="M3 7h3.5c2 0 3.2 1 4.3 2.6l2.4 3.8c1 1.6 2.3 2.6 4.3 2.6H21M3 17h3.5c1.5 0 2.5-.6 3.4-1.6M13.6 8.6c.9-1 1.9-1.6 3.4-1.6H21M18 4l3 3-3 3M18 14l3 3-3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="photo" viewBox="0 0 24 24"><rect x="3" y="5" width="15" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6.5 15l3-3.5 2.5 2.5 1.5-1.5 2 2.5M21 8v10a3 3 0 01-3 3H7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="clock" viewBox="0 0 24 24"><path d="M4 12a8 8 0 108-8 8 8 0 00-6.2 2.9M4 4v3.5h3.5M12 8v4.5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="sparkle" viewBox="0 0 24 24"><path d="M10 3l1.6 4.9L16.5 9.5l-4.9 1.6L10 16l-1.6-4.9L3.5 9.5l4.9-1.6zM18 14l.8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="album" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 4h12M7 14l3-3 3 3 2-2 3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="resume" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l5.5-3.5z" fill="currentColor"/></symbol>
+    <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="3" fill="currentColor"/><path d="M8 10.5V8a4 4 0 018 0v2.5" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+  </svg>
+  <script src="/landing.js?v=1" defer></script>
+  <script src="/qr-dock.js?v=1" defer></script>
+</body>
+</html>

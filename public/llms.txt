@@ -1,0 +1,36 @@
+# Keeper
+
+> Keeper ("Swipe Photo Cleaner: Keeper" on the App Store) is a swipe photo cleaner for iPhone and iPad. It shows the photos and videos in your library one at a time, full screen. Swipe right to keep one, left to delete it. Choices are queued and only applied when you tap Save, and iOS asks you to confirm the deletion. Deleted photos go to the Recently Deleted album for 30 days.
+
+- App Store: https://apps.apple.com/app/id6793817811
+- Platforms: iPhone and iPad, iOS or iPadOS 18 or later
+- Languages: English, German, Spanish, French, Italian, Japanese, Korean, Dutch, Portuguese (Brazil), Turkish, Chinese (Simplified and Traditional)
+- Price: free to download; a weekly or yearly subscription is needed to use the app
+- Privacy: photos never leave the device; no account; no ads
+- Contact: angusdevapps@gmail.com
+
+## Features
+
+- Swipe to keep or delete, with undo
+- Storage freed shown after every session
+- On This Day: photos from today's date in earlier years
+- Start with shuffle, a chosen photo, oldest first, newest first, or one month at a time
+- Limit a session to one album
+- Date, place and camera for each photo
+- Daily streak and lifetime stats (photos kept, deleted, gigabytes freed)
+- Picks up where you left off
+- Keeper does not detect duplicates or blurry photos automatically; you decide on each photo
+
+## Pages
+
+- [Home](https://keeper-photo-cleaner.pages.dev/)
+- [Photo storage calculator](https://keeper-photo-cleaner.pages.dev/photo-storage-calculator)
+- [Support](https://keeper-photo-cleaner.pages.dev/support)
+- [Privacy policy](https://keeper-photo-cleaner.pages.dev/privacy)
+
+## Guides
+
+- [How to delete photos on iPhone](https://keeper-photo-cleaner.pages.dev/guides/how-to-delete-photos-on-iphone)
+- [How to free up iPhone storage from photos](https://keeper-photo-cleaner.pages.dev/guides/free-up-iphone-storage-photos)
+- [Recently Deleted on iPhone: recover photos or delete them for good](https://keeper-photo-cleaner.pages.dev/guides/recently-deleted-photos-iphone)
+- [How to delete photos from iPhone but not iCloud](https://keeper-photo-cleaner.pages.dev/guides/delete-photos-from-iphone-not-icloud)

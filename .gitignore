@@ -1,0 +1,10 @@
+.wrangler/
+.DS_Store
+.claude/launch.json
+.claude/settings.local.json
+
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
+__pycache__/

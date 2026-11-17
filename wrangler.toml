@@ -1,0 +1,4 @@
+# Cloudflare Pages project (static, no Worker). Git-connected: every push to main deploys.
+name = "keeper-photo-cleaner"
+pages_build_output_dir = "./public"
+compatibility_date = "2026-11-01"
