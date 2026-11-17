@@ -19,7 +19,7 @@ from html.parser import HTMLParser
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
-SITE = "https://keeper-photo-cleaner.pages.dev"
+SITE = "https://keeperphoto.app"
 # Sources a fact may come from: the maker's own documentation for how a device,
 # app or service works.
 TRUSTED = (

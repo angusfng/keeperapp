@@ -1,6 +1,6 @@
 # Article playbook
 
-A scheduled Claude routine follows this file three times a week (Tuesday, Thursday and Saturday mornings, Sydney time). Each run publishes at most one new article to keeper-photo-cleaner.pages.dev by pushing to `main`, and Cloudflare Pages deploys it within a minute or two. There's no human review before it goes live, so every step here matters.
+A scheduled Claude routine follows this file three times a week (Tuesday, Thursday and Saturday mornings, Sydney time). Each run publishes at most one new article to keeperphoto.app by pushing to `main`, and Cloudflare Pages deploys it within a minute or two. There's no human review before it goes live, so every step here matters.
 
 The site lives in `public/`. Everything in `content/` and `scripts/` is for the routine and is never deployed.
 
@@ -111,8 +111,8 @@ For facts about Keeper itself, use only the list in STYLE.md.
            <li><a href="/guides/<slug>"><strong>Short title</strong><span>One-line description.</span></a></li>
    ```
 
-2. `public/sitemap.xml`: add `<url><loc>https://keeper-photo-cleaner.pages.dev/guides/<slug></loc><lastmod>YYYY-MM-DD</lastmod></url>` after the last guide entry, indented to match. Also update the `/guides/` entry's `lastmod` to today.
-3. `public/llms.txt`: add `- [<H1>](https://keeper-photo-cleaner.pages.dev/guides/<slug>)` at the end of the Guides list.
+2. `public/sitemap.xml`: add `<url><loc>https://keeperphoto.app/guides/<slug></loc><lastmod>YYYY-MM-DD</lastmod></url>` after the last guide entry, indented to match. Also update the `/guides/` entry's `lastmod` to today.
+3. `public/llms.txt`: add `- [<H1>](https://keeperphoto.app/guides/<slug>)` at the end of the Guides list.
 4. Add one natural in-text link to the new article from the hand-written guide it relates to most. Add one short sentence at the end of the most relevant section, for example "For the quickest way to clear them, see <a href=\"/guides/<slug>\">how to delete screenshots on iPhone</a>." Apart from step 5.5 corrections, don't change anything else in that guide. Skip this if the guide already links to an article on the same topic. Also add one in-text link from the most relevant earlier article, if one fits, and update that article's `dateModified`, visible "Updated" date and sitemap `lastmod`.
 5. **Correct factual errors in the hand-written guides.** If a trusted page you opened today contradicts something a hand-written guide says, fix it:
    - Only change what the source proves wrong. Rewrite that sentence (and its JSON-LD copy, if there is one) to say exactly what the source says, in the guide's voice. Don't restructure or rewrite anything that's still accurate.
@@ -181,11 +181,11 @@ If the push is rejected, run `git pull --rebase origin main` and push again.
 Once the push succeeds, tell search engines about the new page, plus any page you updated:
 
 ```bash
-python3 scripts/notify_search_engines.py https://keeper-photo-cleaner.pages.dev/guides/<slug> [other updated URLs]
+python3 scripts/notify_search_engines.py https://keeperphoto.app/guides/<slug> [other updated URLs]
 ```
 
 This resubmits the sitemap to Google and sends the URLs to IndexNow (Bing and others). It never blocks publishing. Include its output in your report. If Google says it needs Full permission, say so plainly, because the owner has to change that in Search Console.
 
 ## 9. Report
 
-Finish with a few lines: the article's URL (`https://keeper-photo-cleaner.pages.dev/guides/<slug>`), the target query, where the topic came from and why you picked it, any existing page you improved, any title you changed (old and new), whether Search Console data was available, and how many QA reviews it took, with the final scores.
+Finish with a few lines: the article's URL (`https://keeperphoto.app/guides/<slug>`), the target query, where the topic came from and why you picked it, any existing page you improved, any title you changed (old and new), whether Search Console data was available, and how many QA reviews it took, with the final scores.

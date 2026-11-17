@@ -12,7 +12,7 @@ Credentials: same as gsc_report.py (GSC_SERVICE_ACCOUNT_JSON or
 GOOGLE_APPLICATION_CREDENTIALS). Requires: pip install google-auth requests
 
 Usage:
-  python3 scripts/notify_search_engines.py https://keeper-photo-cleaner.pages.dev/guides/<slug> [more URLs]
+  python3 scripts/notify_search_engines.py https://keeperphoto.app/guides/<slug> [more URLs]
 """
 
 import base64
@@ -23,7 +23,7 @@ from urllib.parse import quote
 
 import requests
 
-HOST = "keeper-photo-cleaner.pages.dev"
+HOST = "keeperphoto.app"
 SITEMAP = f"https://{HOST}/sitemap.xml"
 INDEXNOW_KEY = "56b133d003635e73895b1792e00dbded"
 

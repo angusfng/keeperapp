@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Pull Google Search Console data for keeper-photo-cleaner.pages.dev and print a Markdown report.
+"""Pull Google Search Console data for keeperphoto.app and print a Markdown report.
 
 Credentials (first one found wins):
   GSC_SERVICE_ACCOUNT_JSON         service account key, as raw JSON or base64-encoded JSON
   GOOGLE_APPLICATION_CREDENTIALS   path to a service account key file
 
 Optional:
-  GSC_SITE_URL   Search Console property, e.g. "sc-domain:keeper-photo-cleaner.pages.dev" or "https://keeper-photo-cleaner.pages.dev/". Ignored
-                 unless it names keeper-photo-cleaner.pages.dev.
+  GSC_SITE_URL   Search Console property, e.g. "sc-domain:keeperphoto.app" or "https://keeperphoto.app/". Ignored
+                 unless it names keeperphoto.app.
                  If unset, the first property the account can see that mentions
-                 keeper-photo-cleaner.pages.dev is used.
+                 keeperphoto.app is used.
 
 Requires: pip install google-auth requests
 
@@ -30,7 +30,7 @@ from google.oauth2 import service_account
 
 SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
 API = "https://searchconsole.googleapis.com/webmasters/v3"
-DOMAIN = "keeper-photo-cleaner.pages.dev"
+DOMAIN = "keeperphoto.app"
 # Search Console data usually lags by two to three days.
 LAG_DAYS = 3
 

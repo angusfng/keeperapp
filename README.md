@@ -1,6 +1,6 @@
 # Keeper site
 
-Marketing site, SEO guides, support and privacy pages for the Keeper iOS app ("Swipe Photo Cleaner: Keeper", App Store id6793817811). Live at https://keeper-photo-cleaner.pages.dev.
+Marketing site, SEO guides, support and privacy pages for the Keeper iOS app ("Swipe Photo Cleaner: Keeper", App Store id6793817811). Live at https://keeperphoto.app (the old https://keeper-photo-cleaner.pages.dev address redirects there).
 
 This repo was renamed from `keeper-web` to `keeperapp`; GitHub still redirects the old name. The local checkout lives at `~/projects/keeper-web`.
 
@@ -8,7 +8,7 @@ This repo was renamed from `keeper-web` to `keeperapp`; GitHub still redirects t
 
 Push to `main`. The Cloudflare Pages project `keeper-photo-cleaner` is connected to this repo and serves `public/` with no build step (`wrangler.toml` sets `pages_build_output_dir`). Other branches get preview deployments.
 
-The app links to `/privacy` on this address (paywall, Settings, App Store description, Superwall paywall), so `public/privacy.html` must stay at that URL.
+Shipped app builds link to `/privacy` on the pages.dev address (paywall, Settings, App Store description, Superwall paywall), so `functions/_middleware.js` 301-redirects that host to keeperphoto.app path for path. Keep it that way: `public/privacy.html` must stay at `/privacy`. The middleware also sends www to the bare domain and leaves preview deployments alone.
 
 The root `index.html` and `privacy.html` are redirect stubs for the old GitHub Pages address (angusfng.github.io/keeperapp), which still serves the repo root. Cloudflare never serves them.
 
@@ -45,6 +45,6 @@ A Claude routine publishes up to three SEO articles a week (Tuesday, Thursday an
 - `content/topics.md`: backlog ideas
 - `content/SETUP.md`: Search Console access and how to test the routine
 
-## Moving to a custom domain
+## Domain
 
-`python3 scripts/set_domain.py <domain>` rewrites every absolute URL. Then add the domain to the Pages project, add a Search Console Domain property for it (see `content/SETUP.md`), update the routine prompt, and keep `keeper-photo-cleaner.pages.dev/privacy` working because shipped app builds link to it.
+keeperphoto.app is registered with Cloudflare Registrar and attached (with www) to the Pages project. `python3 scripts/set_domain.py <domain>` rewrites every absolute URL if it ever moves again. The app's privacy link should move to https://keeperphoto.app/privacy in a future app update.

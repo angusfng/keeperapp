@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://keeper-photo-cleaner.pages.dev/sitemap.xml
+Sitemap: https://keeperphoto.app/sitemap.xml

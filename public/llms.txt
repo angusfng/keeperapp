@@ -23,14 +23,14 @@
 
 ## Pages
 
-- [Home](https://keeper-photo-cleaner.pages.dev/)
-- [Photo storage calculator](https://keeper-photo-cleaner.pages.dev/photo-storage-calculator)
-- [Support](https://keeper-photo-cleaner.pages.dev/support)
-- [Privacy policy](https://keeper-photo-cleaner.pages.dev/privacy)
+- [Home](https://keeperphoto.app/)
+- [Photo storage calculator](https://keeperphoto.app/photo-storage-calculator)
+- [Support](https://keeperphoto.app/support)
+- [Privacy policy](https://keeperphoto.app/privacy)
 
 ## Guides
 
-- [How to delete photos on iPhone](https://keeper-photo-cleaner.pages.dev/guides/how-to-delete-photos-on-iphone)
-- [How to free up iPhone storage from photos](https://keeper-photo-cleaner.pages.dev/guides/free-up-iphone-storage-photos)
-- [Recently Deleted on iPhone: recover photos or delete them for good](https://keeper-photo-cleaner.pages.dev/guides/recently-deleted-photos-iphone)
-- [How to delete photos from iPhone but not iCloud](https://keeper-photo-cleaner.pages.dev/guides/delete-photos-from-iphone-not-icloud)
+- [How to delete photos on iPhone](https://keeperphoto.app/guides/how-to-delete-photos-on-iphone)
+- [How to free up iPhone storage from photos](https://keeperphoto.app/guides/free-up-iphone-storage-photos)
+- [Recently Deleted on iPhone: recover photos or delete them for good](https://keeperphoto.app/guides/recently-deleted-photos-iphone)
+- [How to delete photos from iPhone but not iCloud](https://keeperphoto.app/guides/delete-photos-from-iphone-not-icloud)
