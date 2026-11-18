@@ -34,3 +34,4 @@
 - [How to free up iPhone storage from photos](https://keeperphoto.app/guides/free-up-iphone-storage-photos)
 - [Recently Deleted on iPhone: recover photos or delete them for good](https://keeperphoto.app/guides/recently-deleted-photos-iphone)
 - [How to delete photos from iPhone but not iCloud](https://keeperphoto.app/guides/delete-photos-from-iphone-not-icloud)
+- [How to delete screenshots on iPhone](https://keeperphoto.app/guides/how-to-delete-screenshots-on-iphone)
