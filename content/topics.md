@@ -5,7 +5,7 @@ Ideas for when Search Console doesn't suggest anything better. An idea only coun
 ## Deleting
 - [ ] How to delete all photos from iPhone
 - [x] How to delete screenshots on iPhone
-- [ ] How to delete duplicate photos on iPhone
+- [x] How to delete duplicate photos on iPhone
 - [ ] How to delete videos on iPhone to save space
 - [ ] How to delete photos from an album without deleting them from your library
 - [ ] How to delete Live Photos or turn them into still photos
