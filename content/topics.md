@@ -25,7 +25,7 @@ Ideas for when Search Console doesn't suggest anything better. An idea only coun
 - [ ] How to free up iCloud storage
 - [ ] How much space does a photo take on iPhone (HEIF vs JPEG)
 - [ ] How to see the size of a photo or video on iPhone
-- [ ] Optimize iPhone Storage: what it does
+- [x] Optimize iPhone Storage: what it does
 
 ## Moving and backing up
 - [ ] How to transfer photos from iPhone to a PC
