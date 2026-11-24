@@ -61,6 +61,10 @@ People follow these steps on their own phone, sometimes with irreplaceable photo
 
 Don't invent anything else: no ratings, user numbers, speed claims ("clean 1,000 photos in 5 minutes") or results.
 
+## Other apps
+
+Only comparison articles talk about other photo apps, under the rules in `content/PLAYBOOK.md`. Facts about another app come from its App Store page or its developer's own site, opened that day. No ratings, prices, download numbers or reviews, nothing negative that its own listing doesn't say, and no claim that it lacks a feature. Be fair: if another app does a job better than Keeper, say so.
+
 ## Mentioning the app
 
-Mention Keeper naturally once in the article text, in the Keeper section, with the in-text App Store link. The closing band is already in the template. The article must be genuinely useful to someone who never downloads the app.
+Mention Keeper naturally once in the article text, in the Keeper section, with the in-text App Store link. Comparison articles are the exception: Keeper gets its own entry alongside the other apps (see "Comparison articles" in `content/PLAYBOOK.md`), still with only one in-text App Store link. The closing band is already in the template. The article must be genuinely useful to someone who never downloads the app.

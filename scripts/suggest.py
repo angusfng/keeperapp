@@ -48,6 +48,13 @@ SEEDS = [
     "organize photos on iphone",
     "photo cleaner app",
     "swipe photo",
+    # Apps people compare (comparison articles)
+    "best photo cleaner app",
+    "best app to delete photos",
+    "app to clean up camera roll",
+    "tinder for photos",
+    "best app to clean iphone storage",
+    "photo cleaner app iphone",
     "how to back up photos",
     "transfer photos from iphone to",
     "google photos",

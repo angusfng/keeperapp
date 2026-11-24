@@ -180,6 +180,33 @@ def readability(article_html):
     return grade, long
 
 
+DISCLOSURE = "Keeper is our app, so we've stuck to what each app's own App Store listing says."
+# Things a comparison article must never state about any app (see PLAYBOOK "Comparison articles").
+COMPARISON_BANNED = [
+    (r"\b\d(\.\d)?\s*(out of 5|stars?|-star)\b", "star rating"),
+    (r"\b[\d,.]+\s*[kKmM]?\+?\s*(ratings|reviews|downloads|users)\b", "rating, review, download or user count"),
+    (r"[$€£]\s?\d", "price"),
+    (r"#\s?1\b|\bnumber one\b", "'#1' or 'number one' ranking"),
+    (r"\bscam\b|\bbuggy\b|\bunsafe\b|\bsketchy\b", "negative claim about an app"),
+]
+
+
+def check_comparison(src, text, p):
+    problems = []
+    norm = text.replace("’", "'")
+    if DISCLOSURE not in norm:
+        problems.append(f'comparison article must include the disclosure in the lede, word for word: "{DISCLOSURE}"')
+    others = {h.split("?")[0] for h in p.hrefs if "apps.apple.com" in h and "6793817811" not in h}
+    if len(others) < 2:
+        problems.append("comparison article must link the App Store page of at least two other apps")
+    for pat, label in COMPARISON_BANNED:
+        for m in re.finditer(pat, text, flags=re.IGNORECASE):
+            problems.append(f"comparison article mentions a {label}: '{m.group(0)}'")
+    if "score-table" not in src:
+        problems.append("comparison article needs a comparison table (class=\"score-table\")")
+    return problems
+
+
 def check(path):
     problems = []
     src = path.read_text()
@@ -275,6 +302,9 @@ def check(path):
     n_h2 = len(re.findall(r"<h2[ >]", prose_only))
     if not 5 <= n_h2 <= 9:
         problems.append(f"{n_h2} h2 headings in the article (want 4 to 7 sections plus the FAQ heading)")
+
+    if re.search(r'<article[^>]*data-type="comparison"', src):
+        problems += check_comparison(src, text, p)
 
     faq_names = []
     for block in p.jsonld:

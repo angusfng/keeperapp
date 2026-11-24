@@ -36,7 +36,7 @@ Preview locally with `wrangler pages dev public --port 8788` (clean URLs like `/
 
 ## Article routine
 
-A Claude routine publishes up to three SEO articles a week (Tuesday, Thursday and Saturday mornings, Sydney time) to `public/guides/`, modelled on the Sleep Tiles and DrivePrep NSW ones. It picks topics from Search Console (`scripts/gsc_report.py`), or Google autocomplete (`scripts/suggest.py`) when Search Console has nothing with enough demand, writes from `content/article-template.html`, must pass `scripts/check_article.py` and a separate QA reviewer, then pushes to `main`. `content/` and `scripts/` are never deployed.
+A Claude routine publishes up to three SEO articles a week (Tuesday, Thursday and Saturday mornings, Sydney time) to `public/guides/`, modelled on the Sleep Tiles and DrivePrep NSW ones. It picks topics from Search Console (`scripts/gsc_report.py`), or Google autocomplete (`scripts/suggest.py`) when Search Console has nothing with enough demand, writes from `content/article-template.html`, must pass `scripts/check_article.py` and a separate QA reviewer, then pushes to `main`. On Saturdays it writes an honest app comparison ("best apps to delete photos on iPhone") when there's demand, under the fairness and sourcing rules in the playbook's "Comparison articles" section; `check_article.py` runs extra checks on any `<article data-type="comparison">`. `content/` and `scripts/` are never deployed.
 
 - `content/PLAYBOOK.md`: the steps every run follows
 - `content/STYLE.md`: voice, US English, sourcing rules (Apple Support and makers' help pages only) and the Keeper facts an article may state

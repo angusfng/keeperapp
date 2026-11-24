@@ -33,6 +33,7 @@ Score each area from 1 to 5.
    - any step that permanently deletes something without saying so
    - any suggestion that photos can be recovered after Recently Deleted, or any recommendation of data recovery software
    - any Keeper feature or claim not listed in STYLE.md, especially anything implying automatic duplicate or blur detection
+   - in a comparison article (`data-type="comparison"` on the `<article>` tag): open every app's App Store page or developer page from `/tmp/facts.md` and check each claim about that app. Also flag any star rating, review count, download number, ranking or price; any claim that another app lacks a feature or is slow, unsafe or buggy; a missing or reworded disclosure line in the lede; Keeper presented as the overall winner; and any app whose table row or "good for" line is noticeably less generous than Keeper's. Each of these is critical.
 5. **Links and calls to action.** Do the internal links point to the most relevant pages? Is the in-text App Store link a natural sentence in the Keeper section, and does it name app facts that actually help with this topic? Is the app mentioned more than STYLE.md allows?
 6. **Readability.** Could a general adult reader follow it on the first read? Look for unexplained jargon and paragraphs that pack in too much.
 

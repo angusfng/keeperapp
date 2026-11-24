@@ -53,7 +53,7 @@ Skip anything that:
 
 - is about data recovery after a photo is permanently gone, jailbreaking, hacking, spying on someone else's phone, or getting into someone else's account.
 - is about Android-only features, unless the question is about moving photos between Android and iPhone and the maker documents the steps.
-- is a "best X" product roundup, a deal, a review of a competing app, news or anything dated ("2026", "this week").
+- is a deal, news or anything dated ("2026", "this week"). App roundups and app-versus-app pages are allowed only as comparison articles (below), never as a standalone review of a competing app.
 - is a brand or navigational query for another product, unless it's a how-to the maker documents (for example how to move photos to Google Photos, from Google's help pages).
 - would compete with an existing page. If a hand-written guide already ranks in the top 15 for the query, the new article must answer a different, specific question within that topic, link to that guide, and the guide must link back (step 5.3). Never target the exact query a hand-written guide is ranking for.
 - overlaps an article in `content/log.md`. Two pages chasing the same search compete with each other. If today's best query belongs to an existing article, improve that article instead (step 6) and pick a different topic for the new one.
@@ -62,6 +62,22 @@ Skip anything that:
 The four hand-written guides are `how-to-delete-photos-on-iphone`, `free-up-iphone-storage-photos`, `recently-deleted-photos-iphone` and `delete-photos-from-iphone-not-icloud`.
 
 **Minimum demand.** For topics from Search Console, the topic's query group (the target query plus the close variants you'd fold into it) must have at least 10 impressions in total in the report's 28 days. `content/topics.md` ideas count only if they match a Search Console query group that clears this bar, or an autocomplete group that meets the rules in option 3.
+
+### Comparison articles
+
+People also search for apps: "best photo cleaner app for iphone", "best app to delete photos on iphone", "tinder for photos app", "app to clean up camera roll", "<app> alternatives". These readers are the closest to downloading a photo cleaner, so the site answers them with honest comparison articles.
+
+- **When.** On Saturday runs (`TZ=Australia/Sydney date +%u` prints `6`), write a comparison article instead of a how-to if a comparison query group meets the minimum demand bar and no comparison went out in the last 6 days (look for `Type: comparison` in the log notes). On other days, write one only if Search Console shows a comparison query group with 10+ impressions. Never more than one a week.
+- **Shapes.** (a) "Best apps to <job> on iPhone" for one job: deleting photos fast, clearing a camera roll, finding duplicates, freeing up storage. (b) "<App> alternatives" for a photo cleanup app that shows up in Search Console or autocomplete. (c) "Keeper vs <App>" only when Search Console shows people searching for both. Each page targets a different query. Never two pages for the same one.
+- **Which apps.** 4 to 6 entries: the built-in Photos app tools (always, first or second, because they're free and many readers need nothing else), Keeper, and 2 to 4 other iPhone apps made for that job, found on the App Store (use WebSearch with `site:apps.apple.com`). Pick apps that are currently listed and clearly built for the job. Never pick an app because it looks weak.
+- **Sources.** Facts about another app come only from its App Store page (apps.apple.com) or its developer's own website, opened in this run, and go in `/tmp/facts.md` like any other fact. Facts about the Photos app come from Apple Support as usual. Keeper facts come only from STYLE.md.
+- **What you may say about another app:** what its App Store description or developer site says it does, whether it's free or offers in-app purchases (as its App Store page shows), its iOS requirement, and its App Privacy label headings as shown (for example "Data Not Collected" or "Data Used to Track You"). When a claim is the developer's own, say so ("its App Store listing says it can...").
+- **What you may not say:** star ratings, review counts, download numbers, rankings or prices (they change daily and differ by country); anything from user reviews, Reddit or tech blogs; that an app lacks a feature (you may say its listing doesn't mention it); that it's slow, buggy, unsafe or a scam; anything about the company behind it. Don't copy its description. Summarize in your own words.
+- **Fairness.** Start the lede with this disclosure, word for word: "Keeper is our app, so we've stuck to what each app's own App Store listing says." Give every entry the same fields in the comparison table: what it's for, how you review photos, price model, iOS requirement and privacy label. Give each app an honest "good for" line. Say plainly when another app suits a job better, for example a duplicate finder for duplicates, because Keeper doesn't find them. Don't crown an overall winner. Group the advice by need ("If you want to...").
+- **Keeper's entry.** List Keeper first only when the query is about swiping or reviewing photos one at a time, which is what it does. Otherwise order entries by how well they fit the query.
+- **Titles.** "Best Apps to Delete Photos on iPhone" style. No year in the slug or title, no "#1", and the number in the title (if any) must match the entries.
+- **Structure.** Use the same template. The short answer names the options by need. Sections: how the apps were picked (one short paragraph), the comparison table, a short section per app (or grouped), and how to do the job with no extra app. In place of a separate Keeper section, Keeper gets its own entry like the others, with the one in-text App Store link. Add `data-type="comparison"` to the `<article>` tag so the checker runs its extra checks, and start the log row's notes with `Type: comparison`.
+- **Freshness.** Apps change. In every maintenance run, a comparison article whose `dateModified` is more than 60 days old comes first: reopen each app's listing, update or cut whatever changed, drop apps no longer on the App Store, and update `dateModified` and the sitemap `lastmod`.
 
 **If no topic qualifies, don't write a new article.** Do a maintenance run instead:
 
