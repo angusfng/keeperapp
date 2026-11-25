@@ -28,7 +28,7 @@ Ideas for when Search Console doesn't suggest anything better. An idea only coun
 - [x] Optimize iPhone Storage: what it does
 
 ## Moving and backing up
-- [ ] How to transfer photos from iPhone to a PC
+- [x] How to transfer photos from iPhone to a PC
 - [ ] How to transfer photos from iPhone to a Mac
 - [ ] How to move photos from iCloud to Google Photos
 - [ ] How to back up iPhone photos before deleting them
