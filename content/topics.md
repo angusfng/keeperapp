@@ -41,7 +41,7 @@ Ideas for when Search Console doesn't suggest anything better. An idea only coun
 
 ## Comparisons (Saturday runs, see PLAYBOOK "Comparison articles")
 - [ ] Best apps to delete photos on iPhone
-- [ ] Best photo cleaner apps for iPhone
+- [x] Best photo cleaner apps for iPhone
 - [ ] Swipe ("Tinder for photos") apps for cleaning up your camera roll
 - [ ] Best apps to find duplicate photos on iPhone
 - [ ] Best apps to free up iPhone storage
